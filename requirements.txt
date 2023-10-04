@@ -1,3 +1,4 @@
+PYTHON_VERSION==3.11.5
 fastapi==0.96.1
 passlib==1.7.4
 pydantic==1.10.13
