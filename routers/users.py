@@ -12,6 +12,7 @@ from pydantic import BaseModel, ValidationError
 from datetime import datetime, timedelta
 from typing import Annotated
 
+from keys.user import security
 from db.models.user import User, UserDB
 from db.models.token import Token, TokenData
 from db.models.rate import Rate
@@ -27,9 +28,9 @@ router = APIRouter(prefix="/users",
 
 # to get a string like this run:
 # openssl rand -hex 32
-SECRET_KEY = "201d573bd7d1344d3a3bfce1550b69102fd11be3db6d379508b6cccc58ea230b"
-ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = 15
+SECRET_KEY = security.SECRET_KEY
+ALGORITHM = security.ALGORITHM
+ACCESS_TOKEN_EXPIRE_MINUTES = security.ACCESS_TOKEN_EXPIRE_MINUTES
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 

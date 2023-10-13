@@ -107,7 +107,7 @@ def top_rating_films(limit: int == 10):
         }
     },
     {
-        "$limit": 10 
+        "$limit": limit 
     }]
     ratings = db_client.ratings.aggregate(pipeline)
     ratings_list = list(ratings)
