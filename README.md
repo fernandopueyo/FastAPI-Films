@@ -4,7 +4,7 @@ This project is an API created with FastAPI that uses a MongoDB database to mana
 
 ## Features
 
-- **Movie Search**: You can search for movies by title, genre, release year, and more.
+- **Movie Search**: You can search for movies by title.
 
 - **Movie Rating**: Authenticated users can rate movies.
 
@@ -20,7 +20,7 @@ Este proyecto es una API creada con FastAPI que utiliza una base de datos MongoD
 
 ## Funcionalidades
 
-- **Búsqueda de Películas**: Puedes buscar películas por título, género, año de lanzamiento y más.
+- **Búsqueda de Películas**: Puedes buscar películas por título.
 
 - **Puntuación de Películas**: Los usuarios autenticados pueden puntuar las películas.
 
