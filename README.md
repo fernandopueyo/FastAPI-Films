@@ -12,7 +12,11 @@ This project is an API created with FastAPI that uses a MongoDB database to mana
 
 - **User Registration**: Users can sign up and create an account to access authenticated functions.
 
+
+
 ---
+
+
 
 # FastAPI MongoDB Films API
 
